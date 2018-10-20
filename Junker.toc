@@ -1,0 +1,9 @@
+## Interface: 80000
+
+## Title: Junker
+## Notes: Automatically sells all gray items and repairs equipment
+## Author: Nllsdfx
+## Dependencies:
+
+Junker.lua
+Junker.xml
