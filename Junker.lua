@@ -5,7 +5,9 @@ local function JunkerReapairAllItems()
     end
 
     if (IsInGuild(UnitName("player")) and CanGuildBankRepair()) then
-        RepairAllItems(1);
+        if not (RepairAllItems(1)) then
+            RepairAllItems();
+        end
     else
         RepairAllItems();
     end
