@@ -1,4 +1,4 @@
-## Interface: 80000
+## Interface: 80100
 
 ## Title: Junker
 ## Notes: Automatically sells all gray items and repairs equipment
