@@ -1,4 +1,4 @@
-local function JunkerReapairAllItems()
+local function JunkerRepairAllItems()
 
     if not (CanMerchantRepair()) then
         return false;
@@ -16,15 +16,15 @@ end
 local function JunkerSellGrayItems()
     local i = 0;
     repeat
-        local slots = GetContainerNumSlots(i)
+        local slots = C_Container.GetContainerNumSlots(i)
         if not (slots == nil) then
             local j = 1;
             repeat
-                local link = GetContainerItemLink(i, j);
+                local link = C_Container.GetContainerItemLink(i, j);
                 if not (link == nil) then
                     local _, _, quality = GetItemInfo(link);
                     if (quality == 0) then
-                        UseContainerItem(i, j);
+                        C_Container.UseContainerItem(i, j);
                     end
                 end
                 j = j + 1;
@@ -39,6 +39,6 @@ function JunkerInit()
 end
 
 function JunkerEvent()
-    JunkerReapairAllItems();
+    JunkerRepairAllItems();
     JunkerSellGrayItems();
 end

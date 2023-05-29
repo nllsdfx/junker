@@ -1,4 +1,4 @@
-## Interface: 100100
+## Interface: 30401
 
 ## Title: Junker
 ## Version: 1.0.0
