@@ -1,7 +1,7 @@
-## Interface: 100100
+## Interface: 100206
 
 ## Title: Junker
-## Version: 1.0.0
+## Version: 1.1.0
 ## Notes: Automatically sells all gray items and repairs equipment
 ## Author: Nllsdfx
 ## Dependencies:
